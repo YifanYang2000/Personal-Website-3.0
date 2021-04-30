@@ -1,0 +1,103 @@
+.Navbar {
+    height: 100vh;
+    width: 150px;
+    font-size: 17px;
+    padding-left: 50px;
+    position: fixed;
+    z-index: 99;
+}
+
+/*------------------------------ Name Logo -----------------------------------*/
+
+.logo {
+    height: 30px;
+    width: 95px;
+    font-size: 30px;
+    font-weight: 550;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.7s;
+    transform: rotate(-90deg) translate(0px, 0px);
+    transform-origin: 0% 0%;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.logo:hover {
+    text-align: left;
+    transition: 0.7s;
+    transform: rotate(0deg) translate(0px, -90px);
+    transform-origin: 0% 0%;
+}
+
+.logo span {
+    color: black;
+    transition: 0.7s;
+}
+
+.logo:hover span {
+    color: #ff4834;
+    transition: 0.7s;
+}
+
+/*---------------------------- Categories tabs -------------------------------*/
+
+.categories-list {
+    list-style-type: none;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.categories-list li {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.categories {
+    position: relative;
+}
+
+.categories:before, .categories:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #ff4834;
+}
+
+.categories:before {
+    left: -2.5px;
+}
+
+.categories:after {
+    right: 2.5px;
+    background: #ff4834;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.categories:hover:before {
+    background: #ff4834;
+    width: 100%;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.categories:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+}
+
+/*---------------------------- Music Button ----------------------------------*/
+
+.music{
+    margin-left: 5px;
+    margin-top: 30px;
+}
