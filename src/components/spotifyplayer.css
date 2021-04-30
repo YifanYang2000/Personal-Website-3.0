@@ -1,0 +1,31 @@
+.Player{
+    height: 80px;
+    width: 80px;
+    right: 0;
+    margin-right: 30px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.7s;
+    transition-delay: 0.7s;
+    z-index: 99;
+}
+
+.Player:hover {
+    height: 300px;
+    width: 300px;
+    transition: 0.7s;
+    transition-delay: 1s;
+}
+
+.playerlength {
+    height: 80px;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.Player:hover .playerlength {
+    height: 300px;
+    transition: 0.7s;
+    transition-delay: 1.7s;
+}
