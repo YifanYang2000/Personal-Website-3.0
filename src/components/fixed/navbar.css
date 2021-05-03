@@ -2,37 +2,36 @@
     height: 100vh;
     width: 150px;
     font-size: 17px;
+    min-height: 700px;
     padding-left: 30px;
     position: fixed;
-    z-index: 98;
+    z-index: 99;
 }
 
 /*------------------------------ Name Logo -----------------------------------*/
 
 .logo {
-    height: 30px;
-    width: 95px;
-    font-size: 30px;
-    font-weight: 550;
-    margin-top: 125px;
+    height: 80px;
+    width: 122px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-top: 155px;
     text-align: right;
     text-decoration: none;
     transition: 0.7s;
-    transform: rotate(-90deg) translate(0px, 0px);
+    transform: rotate(-90deg);
     transform-origin: 0% 0%;
 }
 
 .logo a {
     color: black;
     text-decoration: none;
-    transition: 0.7s;
 }
 
 .logo:hover {
-    width: 80px;
+    width: 120px;
     transition: 0.7s;
-    transform: rotate(0deg) translate(0px, -100px);
-    transform-origin: 0% 0%;
 }
 
 .logo span {
@@ -50,7 +49,6 @@
 .categories-list {
     list-style-type: none;
     margin-left: 5px;
-    margin-top: 50px;
     padding: 0px;
 }
 
@@ -93,4 +91,24 @@
     width: 100%;
     background: transparent;
     transition: 0s;
+}
+
+/*----------------------------- Social media ---------------------------------*/
+
+.social-buttons {
+    bottom: 180px;
+    margin-left: 6px;
+    position: absolute;
+}
+
+.social {
+    color: black;
+    font-size: 23px;
+    margin-right: 10px;
+    transition: 0.7s;
+}
+
+.social:hover {
+    color: #ff4834;
+    transition: 0.7s;
 }

@@ -27,12 +27,10 @@ const Player = () => {
 
     return (
         <div className="Music">
-            <div>
-                <label
-                    className={`arrow ${arrowClass}`}
-                    onClick={() => setExpand(!expand)}
-                >
-                </label>
+            <div
+                className={`arrow ${arrowClass}`}
+                onClick={() => setExpand(!expand)}
+            >
             </div>
             <div className={`player ${playerClass}`}>
                 {getSpotifyPlayer()}
