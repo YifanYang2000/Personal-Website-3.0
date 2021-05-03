@@ -4,7 +4,7 @@
     font-size: 17px;
     padding-left: 30px;
     position: fixed;
-    z-index: 99;
+    z-index: 98;
 }
 
 /*------------------------------ Name Logo -----------------------------------*/
@@ -31,7 +31,7 @@
 .logo:hover {
     width: 80px;
     transition: 0.7s;
-    transform: rotate(0deg) translate(0px, -70px);
+    transform: rotate(0deg) translate(0px, -100px);
     transform-origin: 0% 0%;
 }
 

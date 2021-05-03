@@ -1,0 +1,12 @@
+.David {
+    height: 725px;
+    width: 514px;
+    background-image: url("./david/david.png");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.eyes {
+    width: 450px;
+    margin-top: 196px;
+}

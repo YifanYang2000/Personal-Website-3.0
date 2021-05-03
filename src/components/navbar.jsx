@@ -11,7 +11,7 @@ const Navbar = () => {
                 <ul className='categories-list'>
                     <li><span className='categories'>. skills( )</span></li>
                     <li><span className='categories'>. portfolio( )</span></li>
-                    <li><span className='categories'>. experience( )</span></li>
+                    <li><span className='categories'>. work( )</span></li>
                     <li><span className='categories'>. contact( )</span></li>
                 </ul>
             </div>

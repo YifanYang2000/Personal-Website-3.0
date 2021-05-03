@@ -1,7 +1,6 @@
-import React from 'react';
 import './intro.css'
 
-function Intro() {
+const Intro = () => {
     return (
         <div className="Intro">
             <div className='introtext'>

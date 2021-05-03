@@ -1,9 +1,14 @@
+import React, {useState} from 'react';
 import './spotifyplayer.css';
 
 const Player = () => {
+    const [expand, setExpand] = useState(true);
+    const playerClass = expand ? "expanded-player" : "mini-player";
+    const arrowClass = expand ? "mini-arrow" : "expand-arrow";
+
     const spotifyWidth = "300";
     const spotifyHeight = "300";
-    const spotifyAlbumID = "2IUxd871Ji58B68jQYagwz";
+    const spotifyAlbumID = "5mZ4fryjWGX8dw1NVygHdd";
     const spotifyAlbumURI = `https://open.spotify.com/embed/playlist/${spotifyAlbumID}`;
     const getSpotifyPlayer = () => {
         return (
@@ -21,8 +26,15 @@ const Player = () => {
     }
 
     return (
-        <div className="Player">
-            <div className='playerlength'>
+        <div className="Music">
+            <div>
+                <label
+                    className={`arrow ${arrowClass}`}
+                    onClick={() => setExpand(!expand)}
+                >
+                </label>
+            </div>
+            <div className={`player ${playerClass}`}>
                 {getSpotifyPlayer()}
             </div>
         </div>
