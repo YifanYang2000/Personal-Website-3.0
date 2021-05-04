@@ -8,16 +8,16 @@ const David = () => {
     const indicators = false;
 
     return (
-        <div className="David">
+        <div className="david-wrapper">
             <Carousel className="eyes" indicators={indicators}>
                 <Carousel.Item>
-                    <img src={Jotaro} alt="Jotaro face"/>
+                    <img src={Jotaro} alt="Jotaro face" className="eye"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={Giovanni} alt="Giovani face"/>
+                    <img src={Giovanni} alt="Giovani face" className="eye"/>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img src={Joseph} alt="Joseph face"/>
+                    <img src={Joseph} alt="Joseph face" className="eye"/>
                 </Carousel.Item>
             </Carousel>
         </div>

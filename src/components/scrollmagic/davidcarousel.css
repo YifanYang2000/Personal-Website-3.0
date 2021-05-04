@@ -1,12 +1,19 @@
-.David {
-    height: 725px;
-    width: 514px;
-    background-image: url("./david/david.png");
-    background-repeat: no-repeat;
-    position: absolute;
+.david-wrapper {
+    height: calc((725/514) * 25vw);
+    width: 25vw;
+    background-image: url("./david/david-nobg.png");
+    background-size: cover;
+    position: relative;
 }
 
 .eyes {
-    width: 450px;
-    margin-top: 196px;
+    height: auto;
+    width: 87.6%;
+    position: absolute;
+    top: 27%;
+}
+
+.eye {
+    height: 100%;
+    width: 100%;
 }

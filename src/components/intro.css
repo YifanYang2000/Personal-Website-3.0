@@ -1,18 +1,73 @@
 .Intro {
     height: 100vh;
-    width: 50%;
-    font-size: 80px;
-    letter-spacing: 1px;
-    margin-left: 320px;
+    max-height: 100vh;
+    width: 100vw - 300px;
+    padding-left: 300px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .introtext {
     position: absolute;
+    font-size: 80px;
+    letter-spacing: 1px;
     top: 50%;
     transform: translateY(-50%);
+    white-space: nowrap;
 }
 
 .description {
+    position: absolute;
+    font-size: 80px;
+    letter-spacing: 1px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #ff4834;
     font-weight: 700;
+    z-index: 3;
+}
+
+/*--------------------------- Floating David ---------------------------------*/
+
+.x {
+    height: calc((725/514) * 25vw);
+    width: 25vw;
+    animation: x 29s linear infinite alternate;
+    position: absolute;
+    z-index: 2;
+}
+
+.y {
+    height: calc((725/514) * 25vw);
+    width: 25vw;
+    animation: y 13s linear infinite alternate;
+}
+
+.rotate {
+    height: calc((725/514) * 25vw);
+    width: 25vw;
+    animation: rotation 100s infinite linear;
+}
+
+
+@keyframes x {
+    100% {
+      transform: translateX( calc(100vw - 25vw - 300px) );
+    }
+}
+
+@keyframes y {
+    100% {
+        transform: translateY( calc(100vh - (725/514) * 25vw) );
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }

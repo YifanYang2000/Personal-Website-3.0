@@ -21,22 +21,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="social-buttons">
-                <a
-                    href="https://www.linkedin.com/in/yifanyang2000/"
-                    className="social"
-                >
+                <a href="https://www.linkedin.com/in/yifanyang2000/" className="social">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
-                <a
-                    href="https://github.com/YifanYang2000"
-                    className="social"
-                >
+                <a href="https://github.com/YifanYang2000" className="social">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a
-                    href="https://www.instagram.com/yifan.sheep/"
-                    className="social"
-                >
+                <a href="https://www.instagram.com/yifan.sheep/" className="social">
                     <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </div>
