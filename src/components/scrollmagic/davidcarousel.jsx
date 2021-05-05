@@ -8,7 +8,7 @@ const David = () => {
     const indicators = false;
 
     return (
-        <div className="david-wrapper">
+        <div className="david">
             <Carousel className="eyes" indicators={indicators}>
                 <Carousel.Item>
                     <img src={Jotaro} alt="Jotaro face" className="eye"/>

@@ -5,17 +5,19 @@ const Intro = () => {
     return (
         <div className="Intro">
             <div className='introtext'>
-                HI, I'M<br/>
-                YIFAN YANG,<br/><br/>
+                HEY, I'M<br/>
+                YIFAN YANG,<br/>
+                <span className="description">DEVELOPER.<br/></span>
             </div>
-            <div className="x">
-                <div className="y">
-                    <div className="rotate">
-                        <David/>
+            <div className="david-wrapper">
+                <div className="x">
+                    <div className="y">
+                        <div className="rotate">
+                            <David/>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="description"><br/><br/>DEVELOPER.</div>
         </div>
     );
 }

@@ -1,6 +1,10 @@
-.david-wrapper {
-    height: calc((725/514) * 25vw);
-    width: 25vw;
+:root {
+    --davidwidth: 25vw;
+}
+
+.david {
+    height: calc((725/514) * var(--davidwidth));
+    width: var(--davidwidth);
     background-image: url("./david/david-nobg.png");
     background-size: cover;
     position: relative;
@@ -10,7 +14,7 @@
     height: auto;
     width: 87.6%;
     position: absolute;
-    top: 27%;
+    top: 27.1%;
 }
 
 .eye {
