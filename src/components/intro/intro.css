@@ -46,9 +46,8 @@
     height: calc((725/514) * var(--davidwidth));
     width: var(--davidwidth);
     animation: x 13s linear infinite alternate;
-    margin-left: 10vh;
+    margin-left: 10vw;
     position: absolute;
-    z-index: 98;
 }
 
 .y {
@@ -60,7 +59,7 @@
 .rotate {
     height: calc((725/514) * var(--davidwidth));
     width: var(--davidwidth);
-    animation: rotation 50s infinite linear alternate-reverse;
+    animation: rotation 50s infinite linear;
 }
 
 

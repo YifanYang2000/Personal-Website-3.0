@@ -1,14 +1,9 @@
-import David from './scrollmagic/davidcarousel';
+import David from './davidcarousel';
 import './intro.css';
 
 const Intro = () => {
     return (
         <div className="Intro">
-            <div className='introtext'>
-                HEY, I'M<br/>
-                YIFAN YANG,<br/>
-                <span className="description">DEVELOPER.<br/></span>
-            </div>
             <div className="david-wrapper">
                 <div className="x">
                     <div className="y">
@@ -17,6 +12,11 @@ const Intro = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='introtext'>
+                HEY, I'M<br/>
+                YIFAN YANG,<br/>
+                <span className="description">DEVELOPER.<br/></span>
             </div>
         </div>
     );
