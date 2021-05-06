@@ -16,6 +16,7 @@
     font-size: 30px;
     font-style: italic;
     font-weight: 700;
+    letter-spacing: 1px;
     line-height: 40px;
     margin-top: 30px;
     text-decoration: none;
@@ -49,6 +50,11 @@
     background-position: left;
     transition: 0.7s;
     transition-delay: 0.3s;
+}
+
+.yifan::after, .yang::after {
+    content: " ";
+    white-space: pre;
 }
 
 /*---------------------------- Categories tabs -------------------------------*/

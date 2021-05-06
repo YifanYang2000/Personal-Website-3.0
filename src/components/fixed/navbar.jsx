@@ -11,8 +11,8 @@ const Navbar = () => {
         <div className="Navbar">
             <div className="logo">
                 <a href="yifanyang.ca">
-                    <span className="yifan">YIFAN.</span><br/>
-                    <span className="yang">YANG.</span>
+                    <span className="yifan">YIFAN</span><br/>
+                    <span className="yang">YANG</span>
                 </a>
             </div>
             <div className="nav-wrapper">
