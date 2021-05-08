@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/fixed/navbar';
 import Player from './components/fixed/spotifyplayer';
 import Intro from './components/intro/intro';
+import David from './components/intro/davidcarousel'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <Player/>
       <Intro/>
+      <David/>
     </div>
   );
 }

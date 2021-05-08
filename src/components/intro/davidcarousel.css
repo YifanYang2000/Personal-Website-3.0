@@ -1,13 +1,59 @@
-:root {
-    --davidwidth: 26vw;
+.frame {
+    height: var(--davidheigth);
+    width: var(--davidwidth);
+    position: absolute;
 }
 
-.david {
-    height: calc((725/514) * var(--davidwidth));
+.circle-top-david {
+    height: var(--davidheigth);
+    width: var(--davidheigth);
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.7s;
+}
+
+.frame:hover .circle-top-david {
+    height: 0;
+    width: 0;
+    transition: 0.2s;
+    transition-delay: 2s;
+}
+
+.circle-negative {
+    position: absolute;
+    height: 0;
+    width: 0;
+    background-color: white;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frame:hover .circle-negative {
+    height: var(--davidheigth);
+    width: var(--davidheigth);
+    transition: 2s;
+}
+
+.david-background {
+    height: var(--davidheigth);
     width: var(--davidwidth);
     background-image: url("./david/david-nobg.png");
     background-size: cover;
     position: relative;
+    mix-blend-mode: difference;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.david-bottom {
+    filter: grayscale(80%);
 }
 
 .eyes {

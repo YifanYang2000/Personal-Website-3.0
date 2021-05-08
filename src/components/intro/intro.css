@@ -2,6 +2,7 @@
     --left: 250px;
     --fontsize: 4.2vw;
     --davidwidth: 26vw;
+    --davidheigth: calc((725/514) * var(--davidwidth));
 }
 
 .Intro {
@@ -34,7 +35,7 @@
 
 /*--------------------------- Floating David ---------------------------------*/
 
-.david-wrapper {
+.david-container {
     height: 100%;
     width: 60%;
     position: absolute;
@@ -43,7 +44,7 @@
 }
 
 .x {
-    height: calc((725/514) * var(--davidwidth));
+    height: var(--davidheigth);
     width: var(--davidwidth);
     animation: x 13s linear infinite alternate;
     margin-left: 10vw;
@@ -51,13 +52,13 @@
 }
 
 .y {
-    height: calc((725/514) * var(--davidwidth));
+    height: var(--davidheigth);
     width: var(--davidwidth);
     animation: y 7s linear infinite alternate;
 }
 
 .rotate {
-    height: calc((725/514) * var(--davidwidth));
+    height: var(--davidheigth);
     width: var(--davidwidth);
     animation: rotation 50s infinite linear;
 }
@@ -71,7 +72,7 @@
 
 @keyframes y {
     100% {
-        transform: translateY( calc(100vh - (725/514) * var(--davidwidth)) );
+        transform: translateY( calc(100vh - var(--davidheigth)) );
     }
 }
 
@@ -80,6 +81,6 @@
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(359deg);
+        transform: rotate(359.99deg);
     }
 }

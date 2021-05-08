@@ -1,14 +1,23 @@
+import { useState } from 'react';
 import David from './davidcarousel';
 import './intro.css';
 
 const Intro = () => {
+    const [isPaused, setIsPaused] = useState(false);
+    const playState = isPaused ? "paused" : "running";
+
     return (
         <div className="Intro">
-            <div className="david-wrapper">
-                <div className="x">
-                    <div className="y">
-                        <div className="rotate">
-                            <David/>
+            <div className="david-container">
+                <div className="x" style={{animationPlayState: playState}}>
+                    <div className="y" style={{animationPlayState: playState}}>
+                        <div
+                            className="rotate"
+                            onMouseEnter={() => setIsPaused(true)}
+                            onMouseLeave={() => setIsPaused(false)}
+                            style={{animationPlayState: playState}}
+                        >
+                            <David paused={isPaused}/>
                         </div>
                     </div>
                 </div>
