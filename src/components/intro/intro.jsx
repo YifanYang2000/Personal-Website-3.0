@@ -1,10 +1,23 @@
 import { useState } from 'react';
 import David from './davidcarousel';
+import timeStop from './david/dio-time-stop.mp3';
+import useSound from 'use-sound';
 import './intro.css';
 
 const Intro = () => {
     const [isPaused, setIsPaused] = useState(false);
     const playState = isPaused ? "paused" : "running";
+    const [play, { stop }] = useSound(timeStop, { volume: 0.1 });
+    const hovered = () => {
+        setIsPaused(true);
+        play();
+        return;
+    }
+    const unhovered = () => {
+        setIsPaused(false);
+        stop()
+        return;
+    }
 
     return (
         <div className="Intro">
@@ -13,8 +26,8 @@ const Intro = () => {
                     <div className="y" style={{animationPlayState: playState}}>
                         <div
                             className="rotate"
-                            onMouseEnter={() => setIsPaused(true)}
-                            onMouseLeave={() => setIsPaused(false)}
+                            onMouseEnter={() => hovered()}
+                            onMouseLeave={() => unhovered()}
                             style={{animationPlayState: playState}}
                         >
                             <David paused={isPaused}/>

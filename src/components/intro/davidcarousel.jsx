@@ -7,14 +7,14 @@ import Joseph from './david/face3.jpg';
 
 const David = (props) => {
     const indicators = false;
+    const controls = false;
     const interval = props.paused ? null : 5000;
     const getCarousel = () => {
         return (
             <Carousel
                 className="eyes"
                 indicators={indicators}
-                nextIcon=""
-                prevIcon=""
+                controls={controls}
                 interval={interval}
             >
                 <Carousel.Item>
@@ -37,7 +37,7 @@ const David = (props) => {
             </div>
             <div className="circle-top-david">
                 <div className="circle-negative">
-                    <div className="david-background">
+                    <div className="david-background david-top">
                         {getCarousel()}
                     </div>
                 </div>

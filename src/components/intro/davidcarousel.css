@@ -19,8 +19,8 @@
 .frame:hover .circle-top-david {
     height: 0;
     width: 0;
-    transition: 0.2s;
-    transition-delay: 2s;
+    transition: 0.4s;
+    transition-delay: 1.9s;
 }
 
 .circle-negative {
@@ -37,7 +37,7 @@
 .frame:hover .circle-negative {
     height: var(--davidheigth);
     width: var(--davidheigth);
-    transition: 2s;
+    transition: 1.9s;
 }
 
 .david-background {
@@ -53,7 +53,7 @@
 }
 
 .david-bottom {
-    filter: grayscale(80%);
+    filter: grayscale(90%);
 }
 
 .eyes {
