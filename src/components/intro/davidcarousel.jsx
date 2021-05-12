@@ -30,13 +30,16 @@ const David = (props) => {
         );
     }
 
+    const negativeClass = props.paused ? "negative-after" : "negative-before";
+    const topClass = props.paused ? "top-after" : "top-before";
+
     return (
         <div className="frame">
             <div className="david-background david-bottom">
                 {getCarousel()}
             </div>
-            <div className="circle-top-david">
-                <div className="circle-negative">
+            <div className={`circle-top-david ${topClass}`}>
+                <div className={`circle-negative ${negativeClass}`}>
                     <div className="david-background david-top">
                         {getCarousel()}
                     </div>

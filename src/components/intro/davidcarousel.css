@@ -1,22 +1,26 @@
 .frame {
     height: var(--davidheigth);
     width: var(--davidwidth);
+    cursor: pointer;
     position: absolute;
 }
 
 .circle-top-david {
-    height: var(--davidheigth);
-    width: var(--davidheigth);
     border-radius: 100%;
     overflow: hidden;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.7s;
 }
 
-.frame:hover .circle-top-david {
+.top-before {
+    height: var(--davidheigth);
+    width: var(--davidheigth);
+    transition: 1.2s;
+}
+
+.top-after {
     height: 0;
     width: 0;
     transition: 0.4s;
@@ -25,8 +29,6 @@
 
 .circle-negative {
     position: absolute;
-    height: 0;
-    width: 0;
     background-color: white;
     border-radius: 100%;
     left: 50%;
@@ -34,11 +36,17 @@
     transform: translate(-50%, -50%);
 }
 
-.frame:hover .circle-negative {
+.negative-before {
+    height: 0;
+    width: 0;
+}
+
+.negative-after {
     height: var(--davidheigth);
     width: var(--davidheigth);
     transition: 1.9s;
 }
+
 
 .david-background {
     height: var(--davidheigth);
